@@ -17,6 +17,7 @@ export default function SignIn() {
   const dispatch = useDispatch();
 
   function handleSubmit({ email, password }) {
+    console.tron.log('dispatch was called');
     dispatch(signInRequest(email, password));
   }
 

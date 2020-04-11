@@ -1,4 +1,5 @@
 export function signInRequest(email, password) {
+  console.tron.log('inside action');
   return {
     type: '@auth/SIGN_IN_REQUEST',
     payload: { email, password },

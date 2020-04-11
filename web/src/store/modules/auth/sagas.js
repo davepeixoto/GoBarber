@@ -6,8 +6,10 @@ import api from '~/services/api';
 import { signInSuccess } from './actions';
 
 export function* signIn({ payload }) {
+  console.tron.log('inseide sagas');
   const { email, password } = payload;
 
+  console.tron.log('server has called');
   const response = yield call(api.post, 'sessions', {
     email,
     password,
